@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+    .wrapper{
+        flex-direction: column;
+        .main{
+            width: 86%;
+            .services-item{
+                width: calc(290px - 50px);
+            }
+            .price-item {
+                width: calc(290px - 50px);
+            }
+        }
+    }
+
+}

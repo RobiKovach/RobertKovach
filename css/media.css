@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper .main {
+    width: 86%;
+  }
+  .wrapper .main .services-item {
+    width: calc(290px - 50px);
+  }
+  .wrapper .main .price-item {
+    width: calc(290px - 50px);
+  }
+}
