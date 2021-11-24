@@ -67,6 +67,7 @@ p.description{
     width: 100%;
     display: flex;
     position: relative;
+    justify-content: center;
 }
 
 /*sidebar*/

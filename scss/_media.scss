@@ -1,0 +1,180 @@
+@media screen and (max-width: 1440px){
+    .wrapper{
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 1024px){
+    .sitebar {
+        width: 25%;
+        .sidebar-container{
+            padding: 0 15px;
+        }
+    }
+    .main {
+        width: 64%;
+        .header{
+            justify-content: space-between;
+            .header-content{
+                padding-left: 20px;
+                padding-top: 55px;
+                padding-bottom: 20px;
+                p.main-banner{
+                    font-size: 40px;
+                }
+            }
+            .header-banner {
+                position: relative;
+
+                img.banner-img {
+                    height: 70%;
+                    bottom: 0;
+                    right: 20px;
+                    position: absolute;
+                }
+            }
+            .vek2{
+                bottom: 79px;
+                left: 58px;
+            }
+            .vek3 {
+                bottom: 162px;
+                left: 323px;
+            }
+            .vek4 {
+                top: 52px;
+                right: 234px;
+            }
+            .vek5 {
+                bottom: 20px;
+                right: 236px;
+            }
+            .vek6 {
+                top: 100px;
+                right: 33px;
+            }
+            .vek7 {
+                bottom: 10px;
+                right: 3px;
+            }
+        }
+        .services-item{
+            width: calc(290px - 50px);
+            p.description{
+                text-align: center;
+            }
+        }
+        .price{
+            margin-left: -45%;
+            .price-items {
+                margin-left: 15px;
+                .price-item {
+                    width: calc(270px - 50px);
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .recommendations{
+            margin-left: -45%;
+            .recommendation-item.swiper-slide.swiper-slide-duplicate,
+            .recommendation-item.swiper-slide.swiper-slide-active,
+            .recommendation-item.swiper-slide.swiper-slide-next,
+            .recommendation-item.swiper-slide.swiper-slide-prev,
+            .recommendation-item.swiper-slide {
+                margin-right: 30px !important;
+                .photo-client {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+        .portfolio{
+            margin-left: -45%;
+            .tabs-nav {
+                width: 80%;
+            }
+            .tabs-content{
+                margin-left: 15px;
+            }
+
+            .tabs-all-category {
+                width: 100%;
+            }
+
+            .tab {
+                width: 30%;
+            
+                .link-portfolio {
+                    width: 100%;
+                
+                    .img-portfolio {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .contact {
+            margin-left: -250px;
+            .send-message {
+                width: 50%;
+            }
+            .contact-info-item {
+                width: 87%;
+            }
+        }
+        .footer {
+            margin-left: -40%;
+        }
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .sidebar-container {
+        padding: 0 5px;
+        width: 85%;
+    }
+    .main {
+        margin-left: -1.5%;
+        .header-banner {
+            display: none;
+        }
+        .header {
+            .vek6 {
+                top: 20px;
+            }
+            .vek7 {
+                bottom: 20px;
+                right: 20px;
+            }
+            .vek3 {
+                bottom: 80px;
+                left: 300px;
+            }
+        }
+        .services-item {
+            width: calc(220px - 50px);
+            padding: 40px 20px;
+            p.description{
+                font-size: 14px;
+            }
+            .services-link {
+                margin-top: 20px;
+            }
+            svg{
+                margin-bottom: 0;
+            }
+            p.title{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    #form-footer {
+        width: 50%;
+        input.text{
+            padding-bottom: 90px;
+        }
+    }
+    
+
+}
