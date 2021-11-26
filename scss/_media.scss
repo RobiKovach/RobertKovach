@@ -4,7 +4,7 @@
     }
 }
 @media screen and (max-width: 1024px){
-    .sitebar {
+    .sidebar {
         width: 25%;
         .sidebar-container{
             padding: 0 15px;
@@ -129,10 +129,50 @@
     
 }
 @media screen and (max-width: 768px) {
-    .sidebar-container {
-        padding: 0 5px;
-        width: 85%;
+    .sidebar {
+        max-height: 1460px;
+        z-index: 5;
+        .sidebar-container {
+            padding: 0 10px;
+            width: 95%;
+        }
+
+        .extra-skils-content-item {
+            flex-direction: column;
+            svg {
+                margin-bottom: 5px;
+            }
+            p {
+                margin-top: 5px;
+                justify-content: center;
+                margin: 0;
+                align-items: center;
+                text-align: center;
+            }
+        }
+        .language-content{
+            svg {
+                width: 100%;
+            }
+        }
+        .sidebar-skils{
+            .skils-content{
+                svg {
+                    width: 100%;
+                }
+            }
+        }
+        .sidebar-download {
+            a {
+                padding: 10px 30px;
+            }
+        }
     }
+    .age-item {
+        flex-direction: column;
+    }
+
+    
     .main {
         margin-left: -1.5%;
         .header-banner {
@@ -168,13 +208,293 @@
                 margin-bottom: 10px;
             }
         }
-    }
-    #form-footer {
-        width: 50%;
-        input.text{
-            padding-bottom: 90px;
+
+        .recommendations {
+            margin-bottom: 0;
+        }
+
+        .portfolio {
+            margin-top: 0;
+
+            .tabs-nav {
+                width: 95%;
+            }
+            .tabs-content {
+                margin-left: 0px;
+            }
+        }
+        .contact {
+            margin-left: -195px;
+            .contact-info{
+                width: 40%;
+            }
+            .p-contact-title {
+                font-size: 22px;
+            }
+            .contact-info-item {
+                width: 98%;
+                padding: 25px 5px 15px 5px;
+                .info-block {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+        input.text {
+            padding-bottom: 355px;
+        }
+        #form-footer {
+            width: 50%;
+
+            input.text {
+                padding-bottom: 90px;
+            }
         }
     }
     
 
+}
+@media screen and (max-width: 425px) {
+    .wrapper{
+        max-width: 100%;
+        width: 100%;
+        flex-direction: column;
+        .sidebar {
+            .sidebar-container{
+                padding: 0 35px;
+            }
+            max-height: 1600px;
+            max-width: 100%;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 70px;
+            .facebook-link,
+            .instagram-link,
+            .git-link,
+            .weblancer-link{
+                padding: 15px;
+            }
+            .age-item {
+                flex-direction: row;
+            }
+            .sidebar-language{
+                .language-content{
+                    svg {
+                        display: flex;
+                        align-items: flex-start;
+                        width: 60%;
+                    }
+                }
+            }
+            .sidebar-skils {
+                .skils-content {
+                    svg {
+                        display: flex;
+                        align-items: flex-start;
+                        width: 60%;
+                    }
+                }
+            }
+            .extra-skils-content-item{
+                flex-direction: row;
+                align-items: center;
+                .p-grey{
+                    margin-left: 15px;
+                }
+            }
+        }
+        .main{
+            width: 100%;
+            margin-left: 0;
+            .container{
+                padding: 0;
+                .header{
+                    width: 100%;
+                    margin-top: 30px;
+                }
+            }
+            .services-items{
+                flex-direction: column;
+                .services-item {
+                    width: calc(350px - 50px);
+                }
+            }
+            .price,
+            .recommendations,
+            .portfolio,
+            .contact,
+            .footer{
+                margin-left: 0;
+            }
+            .price-items{
+                margin-left: 0;
+                .price-item{
+                    width: calc(320px - 50px);
+                }
+                
+            }
+            .portfolio .tabs-nav{
+                flex-direction: column;
+            }
+            .portfolio .tabs-content{
+                .tabs-all-category,
+                .design-category,
+                .landing-category,
+                .wordpress-category,
+                .shop-category,
+                .card-website-category {
+                    flex-direction: column;
+                    .tab{
+                        width: 70%;
+                    }
+                }
+                
+            }
+            .contact{
+                flex-direction: column;
+                .send-message {
+                    width: 70%;
+                    margin: 0 auto;
+                    .form{
+                        width: 85%;
+                        input.text {
+                            padding-bottom: 60px;
+                        }
+                        .footerBtnComtainer {
+                            text-align: center;
+                        }
+                    }
+                }
+                .contact-info {
+                    margin-top: 30px;
+                    width: 100%;
+                    text-align: center;
+                    align-items: center;
+                }
+            }
+        }
+        .menu{
+            width: 100%;
+            left: 0;
+            height: auto;
+            z-index: 30;
+            max-width: 100%;
+            .menu-conteiner{
+                .menu-content{
+                    flex-direction: row;
+                    .menu-items{
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            .up{
+                right: 2%;
+            }
+        }
+    }
+    #form-footer {
+        width: 70%;
+        position: absolute;
+        top: 20%;
+
+        .p-contact-title-popup {
+            font-size: 20px;
+        }
+
+        a.popup-heder-close {
+            right: 0%;
+            top: 0%;
+            font-size: 15px;
+        }
+
+        .footerDesc {
+            font-size: 13px;
+        }
+
+        #header-popup-input {
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 5px 10px;
+        }
+
+        input.text {
+            padding-bottom: 100px;
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    .main{
+        .header{
+            .header-content {
+                svg {
+                    width: 80%;
+                }
+
+                p.main-banner {
+                    font-size: 30px;
+                }
+                .banner-button{
+                    svg{
+                        width: 10%;
+                    }
+                }
+            }
+        }
+        .footerDesc {
+            font-size: 15px;
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    .wrapper{
+        .main {
+            .header {
+                .vek3 {
+                    left: 290px;
+                }
+
+                .header-content {
+                    p.main-banner {
+                        font-size: 27px;
+                    }
+                }
+            }
+
+            .services-items {
+                .services-item {
+                    width: calc(300px - 50px);
+                }
+            }
+            .price-items{
+                .price-item {
+                    width: calc(300px - 50px);
+                }
+            }
+            .contact{
+                .send-message{
+                    width: 80%;
+                    .form{
+                        width: 80%;
+                        input{
+                            width: 90%;
+                        }
+                    }
+                }
+                .contact-info{
+                    .contact-info-item {
+                        width: 85%;
+                    }
+                }
+            }
+        }
+        #form-footer{
+            input{
+                width: 90%;
+            }
+        }
+    }
 }

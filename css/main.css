@@ -71,7 +71,7 @@ p.description{
 }
 
 /*sidebar*/
-.sitebar{
+.sidebar{
     max-width: 305px;
     display: flex;
     width: 100%;
